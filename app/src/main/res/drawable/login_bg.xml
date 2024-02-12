@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <!-- View background color -->
+    <gradient
+        android:startColor="#565667"
+        android:centerColor="#343445"
+        android:endColor="#121223"
+        android:angle="270"/>
+
+    <!-- View border color and width -->
+    <stroke
+        android:width="0px"
+        android:color="#222222" >
+    </stroke>
+
+    <!-- The radius makes the corners rounded -->
+    <corners
+        android:radius="0px"   >
+    </corners>
+
+</shape>

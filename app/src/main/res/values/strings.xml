@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">حجز عربات الحرم</string>
+
+    <string name="navigation_drawer_open" />
+
+    <string name="navigation_drawer_close" />
+
+    <string-array name="Sick">
+        <item>الحالة الصحية</item>
+        <item>مريض سكر</item>
+        <item>مريض ضغط</item>
+        <item>غير ذلك</item>
+        <item>لا يوجد</item>
+    </string-array>
+
+    <string-array name="kind_order">
+        <item>نوع الحجز</item>
+        <item>سعي</item>
+        <item>عمرة كاملة في دور الميزانين</item>
+        <item>طواف</item>
+    </string-array>
+
+    <string-array name="kind_cars">
+        <item>نوع العربة</item>
+        <item>عربة كهربائية</item>
+        <item>عربة يدوية</item>
+    </string-array>
+
+    <string-array name="size_cars">
+        <item>حجم العربة</item>
+        <item>عربة ذو مقعد واحد</item>
+        <item>عربة ذو مقعدين</item>
+    </string-array>
+
+    <string-array name="opstion">
+        <item>أضافة (أختياري)</item>
+        <item>سائق (فضلا التأكد من أختيار عربة ذات مقعدين)</item>
+    </string-array>
+
+    <string-array name="withdraw_motabara">
+        <item>انواع التطوع بالمال</item>
+        <item>نقدي</item>
+        <item>ثمن عربة (يتم تحديد مبلغ محدد)</item>
+        <item>عربة</item>
+    </string-array>
+
+    <string-array name="kind_tabaro3">
+        <item>نوع التطوع</item>
+        <item>التطوع بالمال</item>
+        <item>التطوع بالوقت</item>
+        <item>التطوع بدف عربة</item>
+    </string-array>
+
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+</resources>
+

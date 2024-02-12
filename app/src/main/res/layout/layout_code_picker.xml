@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_no_code_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingHorizontal="5dp"
+    android:paddingVertical="5dp">
+
+    <ImageView
+        android:id="@+id/iv_flag"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/flag_egypt" />
+
+    <TextView
+        android:id="@+id/tv_name_code"
+        android:textSize="12sp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="(EG)" />
+
+    <TextView
+        android:id="@+id/tv_code"
+        android:textSize="12sp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="+20" />
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="2dp"
+        app:srcCompat="@drawable/ic_arrow_drop_down" />
+
+</LinearLayout>

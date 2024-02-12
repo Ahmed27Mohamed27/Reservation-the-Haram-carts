@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.haram3rbat.tanaqol"
+    tools:ignore="CoarseFineLocation" >
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SliderScreen.splash"
+            android:exported="false" />
+        <activity
+            android:name=".uiMotabara.FullOrdersHagzMotabaraActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".uiUser.ListMotabara"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".uiMotabara.InfoHag"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".uiMotabara.ChatMotabaraActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".uiMotabara.HomeMotabaraActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".uiUser.ChatActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".uiUser.HomeActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".LoginAndRegister.OTPActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".LoginMotabara.OTPMotabaraActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".uiMotabara.EditTabaro3Activity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".Orders.EditHagzActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".Admin.Motabara_data.InfonTabaro3"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".Admin.User_data.InfoHagz"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".Admin.Motabara_data.Info2"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".Admin.Motabara_data.MainAdmin_motabaraActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".Admin.User_data.MainAdminActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".Admin.User_data.Info"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".Admin.AdminLoginActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".uiMotabara.EditProfileMotabaraActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".uiMotabara.ProfileMotabaraActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".uiUser.EditProfileActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".uiMotabara.FullOrdersMotabaraActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".uiMotabara.OrdersMotabaraActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".uiMotabara.MainMotabaraActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".Orders.FullOrdersActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".Orders.DetailsHagzActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".Orders.OrdersActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".LoginMotabara.LoginMotabaraActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".LoginMotabara.RegisterMotabaraActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".SliderScreen.SliderImages"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".uiUser.HelpActivity"
+            android:exported="true"
+            android:parentActivityName=".uiUser.MainActivity"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".uiUser.ProfileActivity"
+            android:exported="true"
+            android:parentActivityName=".uiUser.MainActivity"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".uiUser.MainActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".LoginAndRegister.LoginActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".LoginAndRegister.RegisterActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".LoginAndRegister.ResetActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".SliderScreen.SplashActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

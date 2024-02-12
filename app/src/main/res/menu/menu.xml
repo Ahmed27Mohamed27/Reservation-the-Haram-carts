@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:checkable="true"
+        android:icon="@drawable/home"
+        android:title="الرئيسية" />
+    <item
+        android:id="@+id/list"
+        android:checkable="true"
+        android:icon="@drawable/list"
+        android:title="قائمة الحجز" />
+    <item
+        android:id="@+id/info"
+        android:checkable="true"
+        android:icon="@drawable/baseline_info_24"
+        android:title="شرح التطبيق" />
+    <item
+        android:id="@+id/profile"
+        android:checkable="true"
+        android:icon="@drawable/person2"
+        android:title="حسابك" />
+    <item
+        android:id="@+id/help"
+        android:checkable="true"
+        android:icon="@drawable/campaign"
+        android:title="معلومات عنا" />
+    <item
+        android:id="@+id/chat"
+        android:checkable="true"
+        android:icon="@drawable/chat"
+        android:title="اتصل بنا" />
+    <item
+        android:id="@+id/logout"
+        android:checkable="true"
+        android:icon="@drawable/logout"
+        android:title="تسجيل الخروج" />
+</menu>

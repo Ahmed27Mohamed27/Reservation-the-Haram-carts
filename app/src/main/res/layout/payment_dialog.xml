@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#808080"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        app:cardUseCompatPadding="true"
+        android:background="#808080"
+        android:elevation="5dp"
+        app:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="#808080"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:text="هل انت حاج / معتمر او متطوع ؟"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_medium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:text="حاج / معتمر"
+                android:background="@drawable/edittext"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/cairo_variablefont_slntwght"
+                android:id="@+id/confirm"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:background="@drawable/edittext"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:text="متطوع"
+                android:fontFamily="@font/cairo_variablefont_slntwght"
+                android:id="@+id/cancel"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:background="@drawable/edittext"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:text="المسؤول"
+                android:fontFamily="@font/cairo_variablefont_slntwght"
+                android:id="@+id/Admin"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

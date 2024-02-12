@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "940323555173",
+    "project_id": "hagz3arabatharm",
+    "storage_bucket": "hagz3arabatharm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940323555173:android:c5ef87fcc869da1f19438c",
+        "android_client_info": {
+          "package_name": "com.haram3rbat.tanaqol"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTodgY3ebFLyOEOCKF2G6L_51Ouxpbs_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

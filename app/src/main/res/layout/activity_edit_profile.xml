@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".uiUser.EditProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/toolbar"
+        android:background="#01b9b1"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/Theme.AppCompat.Light"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="5dp"
+            android:clickable="true"
+            android:elevation="1dp"
+            android:focusable="true"
+            android:text="اسم الحساب"
+            android:fontFamily="@font/cairo_variablefont_slntwght"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/name_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:drawableLeft="@drawable/baseline_person_outline_24"
+            android:gravity="right"
+            android:background="@drawable/edit_login"
+            android:inputType="textAutoComplete"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="5dp"
+            android:clickable="true"
+            android:elevation="1dp"
+            android:focusable="true"
+            android:text="البريد الألكتروني"
+            android:fontFamily="@font/cairo_variablefont_slntwght"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/email_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:drawableLeft="@drawable/mail"
+            android:gravity="right"
+            android:background="@drawable/edit_login"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="5dp"
+            android:clickable="true"
+            android:elevation="1dp"
+            android:focusable="true"
+            android:text="كلمة المرور"
+            android:fontFamily="@font/cairo_variablefont_slntwght"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/password_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:drawableLeft="@drawable/lock"
+            android:gravity="right"
+            android:background="@drawable/edit_login"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="5dp"
+            android:clickable="true"
+            android:elevation="1dp"
+            android:focusable="true"
+            android:text="رقم الهاتف"
+            android:fontFamily="@font/cairo_variablefont_slntwght"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            tools:ignore="RtlHardcoded" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linear_no_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_phone_no">
+
+            <com.haram3rbat.tanaqol.CountryPiker.CountryCodePicker
+                android:id="@+id/ccp_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_login"
+                android:gravity="center"
+                app:arrowSize="20dp"
+                app:contentColor="#000000"
+                app:defaultNameCode="sa"
+                app:excludedCountries="ad,ae"
+                app:fontFamily="@font/roboto_medium"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:showArrowDown="true"
+                app:showFlag="true"
+                app:showNameCode="false"
+                app:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/mobileNumber_user"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="125dp"
+                android:background="@drawable/edit_login"
+                android:digits="0123456789"
+                android:drawableLeft="@drawable/phone_iphone"
+                android:gravity="right"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="12"
+                android:padding="10dp"
+                android:paddingHorizontal="10dp"
+                android:singleLine="true"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ccp_phone"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:minWidth="160dp"
+        android:textSize="19sp"
+        android:indeterminate="true"
+        android:indeterminateTint="#000000"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/edit_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn"
+        android:textStyle="bold"
+        android:fontFamily="@font/cairo_variablefont_slntwght"
+        android:minWidth="160dp"
+        android:text="تطبيق التعديلات"
+        android:textColor="@android:color/white"
+        android:textSize="19sp" />
+
+</LinearLayout>

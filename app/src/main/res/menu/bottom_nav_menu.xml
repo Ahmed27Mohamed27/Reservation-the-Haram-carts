@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/hagz"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="قائمة المتطوعين" />
+
+    <item
+        android:id="@+id/OrdersHagz"
+        android:icon="@drawable/list"
+        android:title="قائمة الحجوزات" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/person2"
+        android:title="حسابي" />
+
+    <item
+        android:id="@+id/list"
+        android:icon="@drawable/logo_bg"
+        android:title="حجز عربة" />
+
+</menu>
