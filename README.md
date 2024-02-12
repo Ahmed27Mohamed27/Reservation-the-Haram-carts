@@ -15,7 +15,7 @@
 
 7- Controlling the reservation whether the reservation is made or cancelled in Orders Screen
 
-8- I used the MVVM architecture pattern in App
+8- I used the architecture pattern MVVM & data binding in App
 
 9- update data firebase realtime in App
 
